@@ -1,0 +1,251 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card card-user">
+      <div class="card-header">
+        <h2 class="card-title">NOUVEAU CERTIFICAT</h2>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="addForm">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>TYPE DE CERTIFICAT</label>
+                <select
+                  name="certificat"
+                  formControlName="certificat"
+                  (click)="voire()"
+                  class="form-control"
+                >
+                  <option value="DETERIORATION">
+                    ATTESTATION DE DETERIORATION DE REGISTRE
+                  </option>
+                  <option selected value="RESIDENCE">RESIDENCE</option>
+                  <option value="COLLECTIF">VIE COLLECTIF</option>
+                  <option value="INDIVIDUEL">VIE INDIVIDUEL</option>
+                  <option value="MAJEURE">VIE MAJEURE</option>
+                  <option value="DIVORCE">
+                    NON DIVORCE ET DE NON REMARIAGE
+                  </option>
+                  <option value="CELIBAT">CELIBAT</option>
+                  <option value="INDIVIDUALITE">D'INDIVIDUALITE</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>PRENOM</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>NOM</label>
+                <input type="text" class="form-control"/>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>DATE DE NAISSANCE</label>
+                <input type="text" class="form-control"/>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>LIEUX DE NAISSANCE</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>PRENOM DU PERE</label>
+                <input
+                  type="text"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>PRENOM ET NOM DE LA MERE</label>
+                <input type="text" class="form-control"/>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="visiblite1 == 'false'">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>N° ACTE</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>ANNEE</label>
+                  <input type="text" class="form-control"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="visiblite2 == 'false'">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>RESIDENCE</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <!-- <div class="col-md-6">
+                <div class="form-group">
+                  <label>RESIDENCE</label>
+                  <input type="text" class="form-control"/>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div *ngIf="visiblite3 == 'false'">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>VIE COLLECTIF</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>VIE COLLECTIF</label>
+                  <input type="text" class="form-control"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="visiblite4 == 'false'">
+            <!-- <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>VIE INDIVIDUEL</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>VIE INDIVIDUEL</label>
+                  <input type="text" class="form-control"/>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div *ngIf="visiblite5 == 'false'">
+            <!-- <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>VIE MAJEURE</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>VIE MAJEURE</label>
+                  <input type="text" class="form-control" placeholder="SARR" />
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div *ngIf="visiblite6 == 'false'">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>NON DIVORCE ET DE NON REMARIAGE</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label
+                    >NON DIVORCE ET DE NON REMARIAGE</label
+                  >
+                  <input type="text" class="form-control"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="visiblite7 == 'false'">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>CELIBAT</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>CELIBAT</label>
+                  <input type="text" class="form-control"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="visiblite8 == 'false'">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>INDIVIDUALITE</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>INDIVIDUALITE</label>
+                  <input type="text" class="form-control"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="update ml-auto mr-auto">
+              <button type="submit" class="btn btn-success btn-round">
+                ENREGISTRER
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>ANNULER</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>
+      VALIDER
+    </button>
+  </mat-dialog-actions>
+</div>

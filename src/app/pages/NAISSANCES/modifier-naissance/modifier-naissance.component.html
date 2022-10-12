@@ -1,0 +1,172 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card card-user">
+      <div class="card-header">
+        <h2 class="card-title">NOUVEAU NAISSANCE</h2>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>PRENOM ENFANT</label>
+                <input type="text" class="form-control" value="Aliou" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>NOM ENFANT</label>
+                <input type="text" class="form-control" value="DIOUF" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="exampleInputEmail1">SEXE ENFANT</label>
+                <select name="sexe" id="sexe" class="form-control">
+                  <option disabled> CHOISIR LE SEXE</option>
+                  <option selected value="masculin">MASCULIN</option>
+                  <option value="feminin">FEMININ</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>PRENOM DU PERE</label>
+                <input type="text" class="form-control" value="elimane" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>PRENOM DE LA MERE</label>
+                <input type="text" class="form-control" value="fatou" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="exampleInputEmail1">NOM DE LA MERE</label>
+                <input type="texte" class="form-control" value="ndiaye"/>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>FORMATION SANITAIRE</label>
+                <input type="text" class="form-control" value="neant" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="exampleInputEmail1"
+                  >DATE ET HEURE DE NAISSANCE</label
+                >
+                <input type="datetime-local" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>LIEUX DE NAISSANCE</label>
+                <input type="text" class="form-control" value="thies" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>PRENOM DECLARANT</label>
+                <input type="text" class="form-control" value="issa" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>NOM DECLARANT</label>
+                <input type="text" class="form-control" value="Faye" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>PROFESSION DECLARANT</label>
+                <input type="text" class="form-control" value="enseignant" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>ADRESSE DECLARANT</label>
+                <input type="text" class="form-control" value="dakar" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>CNI DECLARANT</label>
+                <input type="number" class="form-control" value="123456789" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>ID NAISSANCE AVANT ADOPTION</label>
+                <input type="text" class="form-control" value="12345" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>ID NAISSANCE ADOPTE</label>
+                <input type="number" class="form-control" value="12345"/>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>DATE DECLARATION</label>
+                <input type="date" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>TYPE DE DECLARATION</label>
+                <input type="text" class="form-control" value="neant" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>TYPE DE JUGEMENT</label>
+                <input type="text" class="form-control" value="neant" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>NUMERO JUGEMENT</label>
+                <input type="text" class="form-control" value="12345" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>DATE JUGEMENT</label>
+                <input type="date" class="form-control" value="10/10/2022" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="update ml-auto mr-auto">
+              <button type="submit" class="btn btn-primary btn-round">
+                METTRE A JOUR
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>ANNULER</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>
+      APPLIQUER
+    </button>
+  </mat-dialog-actions>
+</div>

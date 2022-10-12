@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="screen">
+    <div class="screen__content">
+      <img src="../../assets/img/logo.png" alt="" width="100">
+      <form class="login">
+        <div class="login__field">
+          <input
+            type="text"
+            class="login__input"
+            placeholder="Email / N° Téléphone"
+          />
+        </div>
+        <div class="login__field">
+          <input [type]="showPassword ? 'text' : 'password'" class="login__input" placeholder="Mot de Passe" />
+        </div>
+        <input type="checkbox" (click)='showHidePassword()'>{{ showPassword ? '  Caché' : '  Affiché' }} Password
+        <button class="button login__submit" routerLink="/container/client">
+          <span class="button__text">CONNEXION</span>
+        </button>
+      </form>
+    </div>
+    <div class="screen__background">
+      <span class="screen__background__shape screen__background__shape4"></span>
+      <span class="screen__background__shape screen__background__shape3"></span>
+      <span class="screen__background__shape screen__background__shape2"></span>
+      <span class="screen__background__shape screen__background__shape1"></span>
+    </div>
+  </div>
+</div>

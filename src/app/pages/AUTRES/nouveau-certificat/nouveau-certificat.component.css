@@ -1,0 +1,13 @@
+.row {
+  margin-top: -2%;
+}
+input {
+  font-size: 16px;
+  font-weight: bold;
+}
+label {
+  font-size: 16px;
+}
+label{
+  color: black;
+}

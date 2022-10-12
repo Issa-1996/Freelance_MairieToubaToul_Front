@@ -1,0 +1,20 @@
+<div class="sidebar-wrapper">
+  <div class="logo">
+    <a class="simple-text">
+      <div class="logo-image-small">
+        <img src="assets/img/logo.png" style="height:180px; margin-top: -5%;">
+      </div>
+    </a>
+    <a class="simple-text logo-normal ml-4" style="margin-top: -5%;">
+      <b>COMMUNE TOUBA TOUL</b> 
+    </a>
+  </div>
+    <ul class="nav">
+        <li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="{{menuItem.class}}">
+            <a [routerLink]="[menuItem.path]">
+                <i class="nc-icon {{menuItem.icon}}"></i>
+                <h4>{{menuItem.title}}</h4>
+            </a>
+        </li>
+    </ul>
+</div>

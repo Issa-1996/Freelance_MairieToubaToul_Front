@@ -1,0 +1,147 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card card-user">
+      <div class="card-header">
+        <h2 class="card-title">NOUVEAU MARIAGE</h2>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="row">
+            <div class="col-md-4">
+              <label>PRENOM EPOUX</label>
+              <input type="text" name="images" class="form-control" />
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>NOM EPOUX</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>PRENOM EPOUSE</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="exampleInputEmail1">NOM EPOUSE</label>
+                <input type="email" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>LIEUX DU MARIAGE</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="exampleInputEmail1">DATE ET HEURE DU MARIAGE</label>
+                <input type="datetime-local" class="form-control" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>OPTION</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="exampleInputEmail1">REGIME</label>
+                <!-- <input type="email" class="form-control" /> -->
+                <select name="" id="" class="form-control">
+                  <option value="" disabled selected>SELECTIONNER</option>
+                  <option value="">MONOGAMIE</option>
+                  <option value="">POLYGAMIE</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>PROFESSION EPOUX</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="exampleInputEmail1">PROFESSION EPOUSE</label>
+                <input type="email" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>DOMICILE EPOUX</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="exampleInputEmail1">RESIDENCE</label>
+                <input type="email" class="form-control" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>NOM EPOUX PRECEDENT</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="exampleInputEmail1">NOM EPOUSES PRECEDENTES</label>
+                <input type="email" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="exampleInputEmail1">NUMERO JUGEMENT</label>
+                <input type="email" class="form-control" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>DIVORCE</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="exampleInputEmail1">TYPE DE JUGEMENT</label>
+                <input type="email" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>DATE JUGEMENT</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="update ml-auto mr-auto">
+              <button type="submit" class="btn btn-primary btn-round">
+                ENREGISTRER
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>ANNULER</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>FERMER</button>
+  </mat-dialog-actions>
+</div>
